@@ -6,9 +6,8 @@ function Navigation() {
     return (
         <nav>
             <ul>
-                <li><Link to="/">About me and my project</Link></li>
-                <li><Link to="/about"></Link>React To Do List Application</li>
-                
+                <li><Link to="/">About</Link></li>
+                <li><Link to="/project">To Do List</Link></li>
             </ul>
         </nav> 
     );

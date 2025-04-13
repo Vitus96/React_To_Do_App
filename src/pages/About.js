@@ -1,10 +1,12 @@
 import React from "react";
+import Navigation from "../components/Navigation";
 
 
 function About() {
     return (
         <div>
-            About Me 
+            <Navigation />
+            <h1>About</h1> 
         </div>
     );
 };
