@@ -11,6 +11,7 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <BrowserRouter>
+      <Navigation />
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/project" element={<Project />} />

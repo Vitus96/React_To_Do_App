@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals'; // zakomentovat v případě chyb !!
+import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap knihovna 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
