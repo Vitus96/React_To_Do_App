@@ -1,6 +1,11 @@
 import React from "react";
 
+import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+
+// components:
+import DateForm from "./DateForm";
 
 
 function Formtext() {
@@ -13,8 +18,20 @@ function Formtext() {
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Task details</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="write down the task..."/>
+                <Form.Control as="textarea" rows={3} placeholder="write down the task..." />
             </Form.Group>
+
+            <Row>
+                <Col>
+                    <Form.Label>Responsible person</Form.Label>
+                    <Form.Control placeholder="person's name..." />
+                </Col>
+
+                <Col>
+                    <Form.Label>Date</Form.Label>
+                    <DateForm />
+                </Col>
+            </Row>
         </Form>
     );
 };

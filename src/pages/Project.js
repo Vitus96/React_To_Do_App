@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+//style:
+import "../App.css"
+
 // GRID:
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
