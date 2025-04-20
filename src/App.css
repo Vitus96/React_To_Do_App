@@ -9,13 +9,23 @@
   font-weight: bolder;
 }
 
+/* Checkbox */
+
+.form-list-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+ 
+
+ /*
 .form-list-checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   display: inline-block;
   vertical-align: middle;
   border-radius: 5px;
@@ -23,13 +33,14 @@
   background: #eee;
   outline: none;
   position: relative;
+  cursor: pointer;
 }
 
 .form-list-checkbox:checked {
   background: tomato;
 }
 
-.from-list-checkbox:checked::after {
+.form-list-checkbox:checked::after {
   content: "";
   width: 11px;
   height: 11px;
@@ -40,6 +51,77 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+.form-list-checkbox-span {
+
+}
+*/
+
+input[type="checkbox"].custom {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 27px;
+  height: 27px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  transition: background-color 0.1s, border-color 0.1s;
+}
+
+/* Po zaškrtnutí bude pozadí zelené a okraj zelený */
+input[type="checkbox"].custom:checked {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Bílá fajfka se vykreslí jako pseudo-element ::after */
+input[type="checkbox"].custom:checked::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------*/
+
 
 /*
 .App-logo {

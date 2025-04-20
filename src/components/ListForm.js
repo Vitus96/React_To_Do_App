@@ -41,10 +41,12 @@ function ListForm() {
                         >
                             <Container>
                                 <Row>
-                                    <Col>
-                                        <div className="form-list-checkbox">
-                                            <Checkbox />
-                                        </div>
+                                    <Col className="form-list-container">
+                                        
+                                            <input type="checkbox" className="custom">
+                                                
+                                            </input>
+                                        
                                     </Col>
 
                                     <Col>Přezout auto</Col>
