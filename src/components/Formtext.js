@@ -18,7 +18,7 @@ function Formtext() {
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Task details</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="write down the task..." />
+                <Form.Control as="textarea" rows={3} placeholder="write down the task details..." />
             </Form.Group>
 
             <Row>
@@ -28,7 +28,7 @@ function Formtext() {
                 </Col>
 
                 <Col>
-                    <Form.Label>Date</Form.Label>
+                    <Form.Label>Deadline</Form.Label>
                     <DateForm />
                 </Col>
             </Row>

@@ -9,53 +9,15 @@
   font-weight: bolder;
 }
 
-/* Checkbox */
+
+
+/* CHECKBOX */
 
 .form-list-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
- 
-
- /*
-.form-list-checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
-  background: #eee;
-  outline: none;
-  position: relative;
-  cursor: pointer;
-}
-
-.form-list-checkbox:checked {
-  background: tomato;
-}
-
-.form-list-checkbox:checked::after {
-  content: "";
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.form-list-checkbox-span {
-
-}
-*/
 
 input[type="checkbox"].custom {
   -webkit-appearance: none;
@@ -65,7 +27,7 @@ input[type="checkbox"].custom {
   height: 27px;
   border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: rgb(108, 117, 125);
   cursor: pointer;
   position: relative;
   outline: none;
@@ -74,8 +36,8 @@ input[type="checkbox"].custom {
 
 /* Po zaškrtnutí bude pozadí zelené a okraj zelený */
 input[type="checkbox"].custom:checked {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: rgb(25, 135, 84);
+  border-color: rgb(25, 135, 84);
 }
 
 /* Bílá fajfka se vykreslí jako pseudo-element ::after */
@@ -90,8 +52,7 @@ input[type="checkbox"].custom:checked::after {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-
-
+/*--------------------------------------------*/
 
 
 

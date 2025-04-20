@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 //Components: 
-import Formtext from "../components/Formtext"
+import Formtext from "../components/FormText"
 import ButtonForm from "../components/ButtonForm";
 import ListForm from "../components/ListForm";
 

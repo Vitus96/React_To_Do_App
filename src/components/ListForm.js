@@ -8,12 +8,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+
 import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Accordion from 'react-bootstrap/Accordion';
 
 // Componentns: 
 import Checkbox from "./Checkbox";
+import StateList from "./StateList";
 
 
 function ListForm() {
@@ -23,9 +25,9 @@ function ListForm() {
                 <Container>
                     <Row>
                         <Col>ChB</Col>
-                        <Col>Taks</Col>
+                        <Col>Task</Col>
                         <Col>State</Col>
-                        <Col>Responsible person</Col>
+                        <Col>Responsible<br />person</Col>
                         <Col>Days</Col>
                         <Col>Term</Col>
                     </Row>
@@ -34,35 +36,29 @@ function ListForm() {
             <Accordion defaultActiveKey={['0']} alwaysOpen>
 
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header>
-                        <ListGroup.Item
-                            as="li"
-                            className="list-item"
-                        >
+
+                    <Accordion.Header className="form-list-accordion-header">
+                        <ListGroup.Item>
+
                             <Container>
                                 <Row>
                                     <Col className="form-list-container">
-                                        
-                                            <input type="checkbox" className="custom">
-                                                
-                                            </input>
-                                        
+                                        <Checkbox />
                                     </Col>
 
                                     <Col>Přezout auto</Col>
-                                    <Col>splněno/nesplněno</Col>
+                                    <Col><StateList /></Col>
                                     <Col>Vít Šimůnek</Col>
                                     <Col>
                                         <Badge bg="primary" pill>21</Badge>
                                     </Col>
                                     <Col>18.05.2025</Col>
                                 </Row>
-
-
                             </Container>
 
                         </ListGroup.Item>
                     </Accordion.Header>
+
                     <Accordion.Body>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -72,6 +68,7 @@ function ListForm() {
                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                         culpa qui officia deserunt mollit anim id est laborum.
                     </Accordion.Body>
+
                 </Accordion.Item>
 
 

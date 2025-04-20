@@ -1,21 +1,16 @@
-
-/*
 import React, { useState } from 'react';
+
+// Style:
+import "../App.css"
 
 
 function Checkbox() {
-  const [checked, setChecked] = useState(false);
-
   return (
-    <input
-      type="checkbox"
-      checked={checked}
-      onChange={() => setChecked(prev => !prev)}
-    />
+    <>
+      <input type="checkbox" className="custom"></input>
+    </>
   );
 }
 
 
 export default Checkbox;
-
-*/
