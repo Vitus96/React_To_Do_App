@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 function ButtonForm() {
     return (
         <>
-            <Button type="submit">Add task</Button>
+            <Button type="submit" className="button-add">Add task </Button>
         </>
     );
 };

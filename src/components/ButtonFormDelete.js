@@ -1,10 +1,12 @@
 import React from "react";
 
+import Button from 'react-bootstrap/Button';
+
 
 function ButtonFormDelete() {
     return (
         <>
-            <button>Delete</button>
+            <Button type="submit" className="button-add">Delete</Button>
         </>
     );
 }
