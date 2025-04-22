@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-// Style:
-import "../App.css"
-
 
 function Checkbox() {
   return (

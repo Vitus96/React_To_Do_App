@@ -1,7 +1,5 @@
 import React from "react";
 
-//style:
-import "../App.css"
 
 // GRID:
 import Container from 'react-bootstrap/Container';
@@ -125,7 +123,9 @@ function ListForm() {
                                     <Col>
                                         <Badge bg="primary" pill>21</Badge>
                                     </Col>
+
                                     <Col>18.05.2025</Col>
+                                    
                                     <Col><ButtonFormDelete /></Col>
                                 </Row>
                             </Container>

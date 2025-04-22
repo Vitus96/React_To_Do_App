@@ -1,6 +1,8 @@
-.App {
-  text-align: center;
-  font-family: "Open Sans";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /*import nemusí být, protože je  již uveden v HTML*/
+
+body {
+  /*text-align: center;*/
+  font-family: "Open Sans", sans-serif !important;
 }
 
 /* ABOUT sekce */
@@ -11,13 +13,6 @@
   border: 3px solid #0066ff;
   color: black
 }
-
-
-
-
-
-
-
 
 
 /* PROJECT sekce */
