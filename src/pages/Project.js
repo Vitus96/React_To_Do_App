@@ -17,23 +17,15 @@ function Project() {
         <div>
             <Container>
                 <Row>
-                    <Col><h1>To Do List</h1></Col>
+                    <Col>
+                        <div className="todolist-title">
+                            <h1>To Do List</h1>
+                        </div>
+                    </Col>
                 </Row>
 
                 <Row>
                     <Col><Formtext /></Col>
-                </Row>
-
-                <Row>
-                    <Col></Col>
-                    <Col></Col>
-                    <Col></Col>
-                    <Col></Col>
-                    <Col></Col>
-                    <Col></Col>
-                    <Col></Col>
-                    <Col></Col>
-                    <Col><ButtonForm /></Col>
                 </Row>
 
                 <Row>

@@ -20,7 +20,7 @@ import { AccordionHeader } from "react-bootstrap";
 
 function ListForm() {
     return (
-        <>
+        <div className="listform-container">
             {/* 
     <div>
         <Container>
@@ -77,7 +77,7 @@ function ListForm() {
 */}
 
 
-
+            {/*
             <Accordion defaultActiveKey={['0']} alwaysOpen>
                 <Accordion.Item eventKey="0">
 
@@ -146,12 +146,10 @@ function ListForm() {
                 </Accordion.Item>
 
             </Accordion>
+*/}
 
 
-
-
-
-
+            {/*}
             <div className="list-bar">
                 <Container>
                     <Row>
@@ -164,27 +162,82 @@ function ListForm() {
                     </Row>
                 </Container>
             </div>
-            <Accordion defaultActiveKey={['0']} alwaysOpen>
+*/}
 
+
+
+
+            <Accordion defaultActiveKey={['0']} alwaysOpen>
+                {/*
                 <Accordion.Item eventKey="0">
 
                     <Accordion.Header className="form-list-accordion-header">
                         <ListGroup.Item>
 
                             <Container>
-                                <Row>
+                                <Row className="list-item">
                                     <Col className="form-list-container">
                                         <Checkbox />
                                     </Col>
 
-                                    <Col>Přezout auto</Col>
-                                    <Col><StateList /></Col>
-                                    <Col>Vít Šimůnek</Col>
-                                    <Col>
+                                    <Col className="item item-task">Přezout zimí pneumatiky na letní</Col>
+                                    <Col className="item"><StateList /></Col>
+                                    <Col className="item"><span>Vít Šimůnek</span></Col>
+                                    <Col className="item">
                                         <Badge bg="primary" pill>21</Badge>
                                     </Col>
-                                    <Col>18.05.2025</Col>
-                                    <Col><ButtonFormDelete /></Col>
+                                    <Col className="item"><span>18.05.2025</span></Col>
+                                    <Col className="item"><ButtonFormDelete /></Col>
+                                </Row>
+                            </Container>
+
+                        </ListGroup.Item>
+                    </Accordion.Header>
+
+                    <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </Accordion.Body>
+
+                </Accordion.Item>
+*/}
+
+
+
+
+
+                <Accordion.Item eventKey="0">
+
+                    <Accordion.Header className="form-list-accordion-header">
+                        <ListGroup.Item>
+
+                            <div className="form-list-container">
+                                <div className="form-list-checkbox">
+                                    <Checkbox />
+                                </div>
+
+                                <div className="item item-task">
+                                    <span>Přezout zimí pneumatiky na letní </span>
+                                </div>
+
+                                <div className="item-button-delete">
+                                    <ButtonFormDelete />
+                                </div>
+                            </div>
+
+                            <Container>
+                                <Row className="list-item">
+                                    <Col className="item item-statelist"><StateList /></Col>
+                                    <Col className="item"><span>Vít Šimůnek</span></Col>
+                                    <Col className="item">
+                                        <Badge bg="primary" pill>21</Badge>
+                                    </Col>
+                                    <Col className="item"><span>18.05.2025</span></Col>
                                 </Row>
                             </Container>
 
@@ -205,6 +258,11 @@ function ListForm() {
 
 
 
+
+
+
+
+                {/*
                 <Accordion.Item eventKey="1">
                     <Accordion.Header>
                         <ListGroup.Item
@@ -256,9 +314,9 @@ function ListForm() {
                         culpa qui officia deserunt mollit anim id est laborum.
                     </Accordion.Body>
                 </Accordion.Item>
-
+*/}
             </Accordion>
-        </>
+        </div>
     );
 };
 
