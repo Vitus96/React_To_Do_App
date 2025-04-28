@@ -90,58 +90,26 @@ a.navbar-brand {
   }
 }
 
-
 .form-label {
   font-weight: 650;
 }
 
+.button-plus i {
+  margin-right: 0.5em;
+}
 
-
-
-/* ListForm component */
 
 /*
-.listform-container {
-  padding-top: 2em;
-}
-
-.list-group-item {
-  width: 95%;
-}
-
-.form-list-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid #0066ff;
-  padding-bottom: 0.5em;
-}
-
-.list-item {
-  padding: 1em 0 0 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.item-task {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  font-weight: 600;
-  font-size: 1.4em;
-}
-
-.form-list-checkbox {
-  padding-right: 1em;
-}
-
-.item-button-delete {
-  display: flex;
-  justify-content: flex-end;
+.button-delete::before {
+  content: "\1F5D1"; // Unicode hex zápis
+  margin-right: 8px;
+  color: white;
+  font-size: 20px;
 }
 */
 
+
+/* ListForm component */
 
 .form-list-container {
   display: flex;
@@ -154,7 +122,6 @@ a.navbar-brand {
 
   @media (min-width: 37.5em) {
     // 600px
-    //600px
     flex-direction: row;
   }
 }
@@ -205,13 +172,16 @@ a.navbar-brand {
   width: 96%;
 }
 
+.button-delete {
+  width: 4em;
 
-
-
+  i {
+    color: white;
+  }
+}
 
 
 /* CHECKBOX */
-
 .form-list-container {
   display: flex;
   justify-content: flex-start;
@@ -252,36 +222,11 @@ input[type="checkbox"].custom:checked::after {
   transform: rotate(45deg);
 }
 
+
+
+
+
 /*--------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------------------*/
 
 
 /*
