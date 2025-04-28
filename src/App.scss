@@ -19,11 +19,13 @@ a.navbar-brand {
   color: black;
   font-weight: 700;
 }
+
+.about:hover,
+.todolist:hover {
+  color: #0066ff;
+}
+
 /*-----------------------------*/
-
-
-
-
 
 
 .todolist-title {

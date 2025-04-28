@@ -32,8 +32,8 @@ function Navigation() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link><Link to="/">About</Link></Nav.Link>
-                        <Nav.Link><Link to="/project">To Do List</Link></Nav.Link>
+                        <Nav.Link ><Link to="/" className="about">About</Link></Nav.Link>
+                        <Nav.Link ><Link to="/project" className="todolist">To Do List</Link></Nav.Link>
 
                         {/*
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -48,7 +48,7 @@ function Navigation() {
                             </NavDropdown.Item>
                         </NavDropdown>
                         */}
-                        
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
