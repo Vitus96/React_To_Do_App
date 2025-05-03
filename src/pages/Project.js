@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-
+import React, { useState } from "react";
 
 // GRID:
 import Container from 'react-bootstrap/Container';
@@ -8,13 +7,22 @@ import Col from 'react-bootstrap/Col';
 
 //Components: 
 import Formtext from "../components/FormText"
-import ButtonForm from "../components/ButtonForm";
+//import ButtonForm from "../components/ButtonForm";
 import ListForm from "../components/ListForm";
 
 
 
 
 function Project() {
+    const [projects, setProjects] = useState([{
+        task: "Úkol",
+        taskdetail: "Popis",
+        person: "Jméno odsoby",
+        done: false,
+        deadline: new Date(),
+    }]);
+
+
     return (
         <div>
             <Container>

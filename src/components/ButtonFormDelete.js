@@ -10,7 +10,7 @@ function ButtonFormDelete() {
     return (
         <>
             <Button type="submit" className="button-add button-delete">
-                {/*<i class="fa-solid fa-trash-can"></i>*/}
+                {/* <i class="fa-solid fa-trash-can"></i> */}
                 <FontAwesomeIcon icon={faTrashCan} />
             </Button>
 
