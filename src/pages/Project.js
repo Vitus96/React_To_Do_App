@@ -19,7 +19,7 @@ function Project() {
         taskdetail: "Popis",
         person: "Jméno odsoby",
         done: false,
-        deadline: new Date(),
+        deadline: '2025-01-01',
     }]);
 
 
@@ -39,7 +39,7 @@ function Project() {
                 </Row>
 
                 <Row>
-                    <Col><ListForm /></Col>
+                    <Col><ListForm data={projects} /></Col>
                 </Row>
             </Container>
 
