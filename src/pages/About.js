@@ -14,20 +14,131 @@ function About() {
                 <Row>
                     <Col>
                         <div className="about-countainer-title">
-                            <h1>About me and project</h1>
+                            <h1>About project</h1>
+                        </div>
+                    </Col>
+                </Row>
+                {/*}
+                <Row>
+                    <Col>
+                        <div className="about-countainer-text">
+
+                            <div className="welcome">
+                                <p>Welcome to my To Do List project built with React.</p>
+                            </div>
+                            
+                            <div className="possibilities">
+                                <p>This project allows you to:</p>
+                                <ul>
+                                    <li>add tasks with a title, details, responsible person, and a deadline,</li>
+                                    <li>display tasks clearly in a list,</li>
+                                    <li>delete individual tasks,</li>
+                                    <li>easily work with a form that manages state using React hooks.</li>
+                                </ul>
+                            </div>
+                            
+                            <div className="technologies">
+                                <p>Technologies used:</p>
+                                <ul>
+                                    <li>React (functional components + hooks)</li>
+                                    <li>React Bootstrap (for form styling)</li>
+                                    <li>useState and props for state management and component communication</li>
+                                </ul>
+                            </div>
+                            
+                            <div className="features">
+                                <p>Project features:</p>
+                                <ul>
+                                    <li>Form validation – you can’t add an empty task</li>
+                                    <li>Dynamically generated task list</li>
+                                    <li>Ability to remove tasks from the list</li>
+                                    <li>Reactive data flow between the form and the list</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </Col>
+
+                    <Col>
+                        <div className="">
+                            <img src="logo192.png" alt="react" className="rotating-react"></img>
+                        </div>
+                    </Col>
+                </Row>
+                */}
+
+                <Row>
+                    <Col>
+                        <div className="welcome-container">
+                            <div className="welcome">
+                                <p>Welcome to my To Do List project built with React.</p>
+                            </div>
                         </div>
                     </Col>
                 </Row>
 
                 <Row>
                     <Col>
-                        <div className="about-countainer-text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
+                        <div className="possibilities-container">
+                            <div className="possibilities">
+                                <p>This project allows you to:</p>
+                                <ul>
+                                    <li>add tasks with a title, details, responsible person, and a deadline,</li>
+                                    <li>display tasks clearly in a list,</li>
+                                    <li>delete individual tasks,</li>
+                                    <li>easily work with a form that manages state using React hooks.</li>
+                                </ul>
+                            </div>
+
+                            <div className="react-container">
+                                <img src="logo192.png" alt="react" className="rotating-react"></img>
+                            </div>
+
                         </div>
                     </Col>
                 </Row>
+
+                <Row>
+                    <Col>
+                        <div className="technologies-container">
+
+                            <div className="react-container">
+                                <img src="logo192.png" alt="react" className="rotating-react"></img>
+                            </div>
+
+                            <div className="technologies">
+                                <p>Technologies used:</p>
+                                <ul>
+                                    <li>React (functional components + hooks)</li>
+                                    <li>React Bootstrap (for form styling)</li>
+                                    <li>useState and props for state management and component communication</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col>
+                        <div className="features-container">
+                            <div className="features">
+                                <p>Project features:</p>
+                                <ul>
+                                    <li>Form validation – you can’t add an empty task</li>
+                                    <li>Dynamically generated task list</li>
+                                    <li>Ability to remove tasks from the list</li>
+                                    <li>Reactive data flow between the form and the list</li>
+                                </ul>
+                            </div>
+
+                            <div className="react-container">
+                                <img src="logo192.png" alt="react" className="rotating-react"></img>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+
+
             </Container>
 
         </div>

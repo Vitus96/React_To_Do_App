@@ -16,9 +16,9 @@ function DateForm() {
           type="date"
           value={date}
           onChange={e => setDate(e.target.value)}
-          // můžeš přidat omezení:
-          // min="2025-01-01"
-          // max="2025-12-31"
+        // můžeš přidat omezení:
+        // min="2025-01-01"
+        // max="2025-12-31" 
         />
       </label>
     </form>

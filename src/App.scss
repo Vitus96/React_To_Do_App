@@ -29,7 +29,7 @@ a.navbar-brand {
 
 
 .todolist-title {
-  margin: 2em 0 1em 0; 
+  margin: 2em 0 1em 0;
 }
 
 
@@ -38,6 +38,7 @@ a.navbar-brand {
   margin-top: 2em;
 }
 
+/*
 .about-countainer-text {
   margin: 2em 0 2em 0;
   padding: 1.8em 1em 1em 1em;
@@ -45,6 +46,133 @@ a.navbar-brand {
   box-shadow: 5px 1px 27px #0066ff;
   border-radius: 10px;
   background-color: #e8ebea
+}
+*/
+
+/* 62 em*/
+// 992px 
+
+.about-countainer-title h1 {}
+
+.welcome-container p {
+  margin-top: 1em;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.possibilities-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width:62em) {
+    display: flex;
+    flex-direction: none;
+  }
+
+  .react-container img {
+    @media (max-width:62em) {
+      display: none;
+
+    }
+  }
+}
+
+.technologies-container {
+  display: flex;
+  justify-content: space-between;
+
+  .react-container {
+    display: flex;
+    justify-content: flex-start;
+
+    @media (max-width:62em) {
+      display: none;
+    }
+  }
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 62em) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+.welcome p,
+.possibilities p,
+.technologies p,
+.features p {
+  font-weight: 700;
+}
+
+.possibilities {
+  margin: 2em 0 1em 0;
+  padding: 1.8em 1em 1em 1em;
+  border: 2px solid #0066ff;
+  box-shadow: 5px 1px 27px #0066ff;
+  border-radius: 10px;
+  background-color: #e8ebea;
+  max-width: 700px;
+
+  @media (min-width: 30em) {
+    // 546 px
+    width: 600px;
+  }
+}
+
+.technologies {
+  margin: 3em 0 1em 0;
+  padding: 1.8em 1em 1em 1em;
+  border: 2px solid springgreen;
+  box-shadow: 5px 1px 27px springgreen;
+  border-radius: 10px;
+  background-color: #e8ebea;
+
+  @media (min-width: 30em) {
+    // 456px
+    width: 600px;
+  }
+}
+
+.features {
+  margin: 3em 0 3em 0;
+  padding: 1.8em 1em 1em 1em;
+  border: 2px solid #eb422f;
+  box-shadow: 5px 1px 27px #eb422f;
+  border-radius: 10px;
+  background-color: #e8ebea;
+
+  @media (min-width: 30em) {
+    // 456px
+    width: 600px;
+  }
+}
+
+.react-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.85;
+}
+
+.rotating-react {
+  animation: rotation 15s linear infinite;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* -----PROJECT section----- */
@@ -67,7 +195,8 @@ a.navbar-brand {
     margin-top: 1em;
 
 
-    @media (min-width: 21.875em) { //350 px
+    @media (min-width: 21.875em) {
+      //350 px
       flex-direction: row;
     }
 

@@ -68,9 +68,13 @@ function Formtext({ onSubmit }) {
             person,
             done: false,
             deadline: date,
-        })
+        });
+        // Vyčištění formuláře
+        setTask("");
+        setDetails("");
+        setPerson("");
+        setDate("");
     }
-
 
     return (
 
@@ -79,23 +83,23 @@ function Formtext({ onSubmit }) {
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <Form.Label>Task</Form.Label>
                     <Form.Control
-                      type="text"
-                      placeholder="write a task..."
-                      // Pridal som onChange a value
-                      onChange={(event) => setTask(event.target.value)}
-                      value={task}
+                        type="text"
+                        placeholder="write a task..."
+                        // Pridal som onChange a value
+                        onChange={(event) => setTask(event.target.value)}
+                        value={task}
                     />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Task details</Form.Label>
                     <Form.Control
-                      as="textarea"
-                      rows={3}
-                      placeholder="write down the task details..."
-                      // Pridal som onChange a value
-                      onChange={(event) => setDetails(event.target.value)}
-                      value={details}
+                        as="textarea"
+                        rows={3}
+                        placeholder="write down the task details..."
+                        // Pridal som onChange a value
+                        onChange={(event) => setDetails(event.target.value)}
+                        value={details}
                     />
                 </Form.Group>
 
@@ -106,13 +110,21 @@ function Formtext({ onSubmit }) {
                         <div className="formtext-container">
                             <div>
                                 <Form.Label>Responsible person</Form.Label>
-                                <Form.Control placeholder="person's name..." />
+                                <Form.Control
+                                    placeholder="person's name..."
+                                    onChange={(event) => setPerson(event.target.value)}
+                                    value={person}
+                                />
                             </div>
 
                             <div className="formtext-bottom">
                                 <div>
                                     <Form.Label>Deadline</Form.Label>
-                                    <DateForm />
+                                    <DateForm 
+                                        type="date"
+                                        onChange={(event) => setDate(event.target.value)}
+                                        value={date}
+                                    />
                                 </div>
 
                                 <div className="form-text-button-add">
