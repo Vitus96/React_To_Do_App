@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
 
-function DateForm() {
+function DateForm({ onSubmit }) {
   const [date, setDate] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Vybrané datum je: ${date}`);
+    //alert(`Vybrané datum je: ${date}`);
+    onSubmit(date);
   };
 
   return (

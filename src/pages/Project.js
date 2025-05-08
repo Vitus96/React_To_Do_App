@@ -71,8 +71,23 @@ function Project() {
         );
     }
 
+    /*
     function toggleProject(index) {
         console.log("toggleProject", index);
+      
+    }
+    */
+
+    function toggleProject(index) {
+        console.log("toggleProject", index);
+        
+        setProjects(prevProjects =>
+            prevProjects.map((project, idx) =>
+                idx === index
+                    ? { ...project, done: !project.done }
+                    : project
+            )
+        );
     }
 
     return (

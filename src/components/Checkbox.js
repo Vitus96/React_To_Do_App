@@ -10,10 +10,17 @@ function Checkbox() {
 }
 */
 
-function Checkbox({onToggle, checked}) {
+function Checkbox({ onToggle, checked }) {
   return (
     <>
-      <input type="checkbox" checked={checked} onChange={onToggle} className="custom"></input>
+      <input
+        type="checkbox"
+        checked={checked}
+        onChange={onToggle}
+        className="custom"
+      >
+
+      </input>
     </>
   );
 }

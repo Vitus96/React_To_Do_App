@@ -76,8 +76,11 @@ function ListForm({ data, onToggle }) {
 
 
 function ListForm({ data, onToggle, onDelete }) {
+
+
     return (
         <div>
+
             {data.map((item, index) => (
                 <div className="listform-container">
 
@@ -109,7 +112,11 @@ function ListForm({ data, onToggle, onDelete }) {
                                             <Col className="item">
                                                 <Badge bg="primary" pill>21</Badge>
                                             </Col>
-                                            <Col className="item"><span>{item.deadline}</span></Col>
+                                            <Col className="item">
+                                                <span>{item.deadline}</span>
+
+
+                                            </Col>
                                         </Row>
                                     </Container>
 
