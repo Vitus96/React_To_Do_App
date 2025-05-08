@@ -17,6 +17,7 @@ import ButtonFormDelete from "./ButtonFormDelete";
 //import { AccordionHeader } from "react-bootstrap";
 
 
+/*
 function ListForm({ data, onToggle }) {
     return (
         <div>
@@ -69,8 +70,63 @@ function ListForm({ data, onToggle }) {
                 </div>
             ))}
         </div>
+    );
+};
+*/
 
 
+function ListForm({ data, onToggle, onDelete }) {
+    return (
+        <div>
+            {data.map((item, index) => (
+                <div className="listform-container">
+
+                    <Accordion key={index} defaultActiveKey={['0']} alwaysOpen>
+
+                        <Accordion.Item eventKey="0">
+
+                            <Accordion.Header className="form-list-accordion-header">
+                                <ListGroup.Item>
+
+                                    <div className="form-list-container">
+                                        <div className="form-list-checkbox">
+                                            <Checkbox onToggle={() => onToggle(index)} checked={item.done} />
+                                        </div>
+
+                                        <div className="item item-task">
+                                            <span>{item.task}</span>
+                                        </div>
+
+                                        <div className="item-button-delete">
+                                            <ButtonFormDelete onClick={() => onDelete(index)} />
+                                        </div>
+                                    </div>
+
+                                    <Container>
+                                        <Row className="list-item">
+                                            <Col className="item item-statelist"><StateList /></Col>
+                                            <Col className="item"><span>{item.person}</span></Col>
+                                            <Col className="item">
+                                                <Badge bg="primary" pill>21</Badge>
+                                            </Col>
+                                            <Col className="item"><span>{item.deadline}</span></Col>
+                                        </Row>
+                                    </Container>
+
+                                </ListGroup.Item>
+
+                            </Accordion.Header>
+
+                            <Accordion.Body>
+                                {item.taskdetail}
+                            </Accordion.Body>
+
+                        </Accordion.Item>
+
+                    </Accordion>
+                </div>
+            ))}
+        </div>
     );
 };
 

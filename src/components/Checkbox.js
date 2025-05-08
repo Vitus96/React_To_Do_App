@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-
+/*
 function Checkbox() {
   return (
     <>
@@ -8,6 +8,14 @@ function Checkbox() {
     </>
   );
 }
+*/
 
+function Checkbox({onToggle, checked}) {
+  return (
+    <>
+      <input type="checkbox" checked={checked} onChange={onToggle} className="custom"></input>
+    </>
+  );
+}
 
 export default Checkbox;

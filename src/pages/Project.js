@@ -11,8 +11,7 @@ import Formtext from "../components/FormText"
 import ListForm from "../components/ListForm";
 
 
-
-
+/*
 function Project() {
     const [projects, setProjects] = useState([{
         task: "Úkol",
@@ -40,6 +39,63 @@ function Project() {
 
                 <Row>
                     <Col><ListForm data={projects} /></Col>
+                </Row>
+            </Container>
+
+        </div>
+    );
+};
+*/
+
+function Project() {
+    // Na zaciatku bude prazdne pole
+    const [projects, setProjects] = useState([]);
+
+    function addProject(project) {
+        // Pridaj projekt do pola
+        setProjects(prev => [...prev, project]);
+    }
+
+    /*
+    function removeProject(index) {
+        console.log("removeProject", index);
+        // TODO: dokoncit funkciu vymazania, pouzit filter
+        
+    }
+    */
+
+    function removeProject(indexToRemove) {
+        console.log("removeProject", indexToRemove);
+        // TODO: dokoncit funkciu vymazania, pouzit filter
+        setProjects(prevProjects => prevProjects.filter((_, idx) => idx !== indexToRemove)
+        );
+    }
+
+    function toggleProject(index) {
+        console.log("toggleProject", index);
+    }
+
+    return (
+        <div>
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="todolist-title">
+                            <h1>To Do List</h1>
+                        </div>
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col><Formtext onSubmit={addProject} /></Col>
+                </Row>
+
+                <Row>
+                    <Col><ListForm
+                        data={projects}
+                        onToggle={toggleProject}
+                        onDelete={removeProject}
+                    /></Col>
                 </Row>
             </Container>
 
