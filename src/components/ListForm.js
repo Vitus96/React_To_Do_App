@@ -97,7 +97,7 @@ function ListForm({ data, onToggle, onDelete }) {
                                         </div>
 
                                         <div className="item item-task">
-                                            <span>{item.task}</span>
+                                             <span className={item.done && 'text-decoration-line-through'}>{item.task}</span>
                                         </div>
 
                                         <div className="item-button-delete">
@@ -107,7 +107,7 @@ function ListForm({ data, onToggle, onDelete }) {
 
                                     <Container>
                                         <Row className="list-item">
-                                            <Col className="item item-statelist"><StateList /></Col>
+                                            <Col className="item item-statelist"><StateList isDone={item.done} /></Col>
                                             <Col className="item"><span>{item.person}</span></Col>
                                             <Col className="item">
                                                 <Badge bg="primary" pill>21</Badge>

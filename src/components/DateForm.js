@@ -1,28 +1,20 @@
 import React, { useState } from "react";
 
 
-function DateForm({ onSubmit }) {
-  const [date, setDate] = useState("");
+function DateForm({ value, onChange }) {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    //alert(`Vybrané datum je: ${date}`);
-    onSubmit(date);
-  };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        <input
-          type="date"
-          value={date}
-          onChange={e => setDate(e.target.value)}
-        // můžeš přidat omezení:
-        // min="2025-01-01"
-        // max="2025-12-31" 
-        />
-      </label>
-    </form>
+    <label>
+      <input
+        type="date"
+        value={value}
+        onChange={onChange}
+      // můžeš přidat omezení:
+      // min="2025-01-01"
+      // max="2025-12-31" 
+      />
+    </label>
   );
 }
 

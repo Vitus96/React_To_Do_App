@@ -65,7 +65,7 @@ function Project() {
     */
 
     function removeProject(indexToRemove) {
-        console.log("removeProject", indexToRemove);
+        //console.log("removeProject", indexToRemove);
         // TODO: dokoncit funkciu vymazania, pouzit filter
         setProjects(prevProjects => prevProjects.filter((_, idx) => idx !== indexToRemove)
         );

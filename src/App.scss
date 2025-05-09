@@ -60,7 +60,8 @@ a.navbar-brand {
   font-size: 1.3em;
 }
 
-.possibilities-container {
+.possibilities-container,
+.features-container {
   display: flex;
   justify-content: space-between;
 
@@ -91,6 +92,7 @@ a.navbar-brand {
   }
 }
 
+/*
 .features-container {
   display: flex;
   flex-direction: column;
@@ -99,8 +101,9 @@ a.navbar-brand {
     flex-direction: row;
     justify-content: space-between;
   }
-
 }
+*/
+
 
 .welcome p,
 .possibilities p,

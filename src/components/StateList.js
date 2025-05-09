@@ -4,15 +4,24 @@ import React from "react";
 import Badge from 'react-bootstrap/Badge';
 import Stack from 'react-bootstrap/Stack';
 
-function StateList() {
+function StateList({ isDone }) {
   return (
     <Stack direction="horizontal" gap={2}>
-      {/*<span>{project.done ? 'done' : 'unfinished'}</span>*/}
-      <Badge bg="secondary">unfinished</Badge>
-      <Badge bg="success">done</Badge>
+      {/*{isDone ? (*/}
+      {/*  <Badge bg="success">done</Badge>*/}
+      {/*) : (*/}
+      {/*  <Badge bg="secondary">unfinished</Badge>*/}
+      {/*)}*/}
+      <Badge
+        // className={isDone ? "text-success" : "text-danger"}
+        bg={isDone ? 'success' : 'secondary'}
+      >
+        {isDone ? 'done' : 'unfinished'}
+      </Badge>
     </Stack>
   );
 }
+
 
 
 export default StateList;
